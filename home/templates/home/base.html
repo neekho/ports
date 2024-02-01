@@ -90,7 +90,7 @@
 
     </section>
 
-    <section id="#my-skills">
+    <section id="my-skills">
       <div class="container px-4 py-5" id="icon-grid">
         <h2 class="pb-2 border-bottom">My Skills</h2>
 
@@ -271,12 +271,12 @@
   <footer class="container py-5 ">
     <div class="row">
       <div class="col-12 col-md">
-        <small class="d-block mb-3 text-muted">&copy; 2022</small>
+        <small class="d-block mb-3 text-muted">&copy; {{current_year}}</small>
       </div>
 
 
       <div class="col-6 col-md">
-        <img src="assets/images/user.png" alt="X">
+        <img src="{% static 'home/images/user.png' %}" alt="X">
         <h5>Accounts</h5>
         <ul class="list-unstyled text-small">
           <li><a class="link-secondary" href="https://www.linkedin.com/in/nikhorem/" target="_blank">LinkedIn</a></li>
