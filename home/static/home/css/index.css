@@ -170,7 +170,36 @@ textarea {
 }
 
 
-.small-logo {
+
+/* Tools/Languages Section */
+
+.small-logo img {
   width: 30px;
   height: 30px;
+  transition: transform 0.6s ease-in-out;
+
+}
+
+
+.hover-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-container:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+.hover-container img, h4, p {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-container:hover img, h4, p {
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+
+
+
+.footer-bg {
+  background-color: rgba(0, 0, 0, .85);
+
 }

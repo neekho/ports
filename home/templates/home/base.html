@@ -34,6 +34,7 @@
       <a class="py-2 d-none d-md-inline-block" href="#about-me">Education</a>
       <a class="py-2 d-none d-md-inline-block" href="#my-skills">Skills</a>
       <a class="py-2 d-none d-md-inline-block" href="#projects">Projects</a>
+      <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
 
     </nav>
   </header>
@@ -104,7 +105,7 @@
         <h2 class="pb-2 border-bottom">My Skills and Tools</h2>
 
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-          <div class="col d-flex align-items-start">
+          <div hover-container class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#bootstrap" />
             </svg>
@@ -118,7 +119,7 @@
             </div>
           </div>
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#cpu-fill" />
             </svg>
@@ -133,7 +134,7 @@
           </div>
 
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#calendar3" />
             </svg>
@@ -147,7 +148,7 @@
           </div>
 
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#home" />
             </svg>
@@ -160,7 +161,7 @@
             </div>
           </div>
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#speedometer2" />
             </svg>
@@ -175,7 +176,7 @@
             </div>
           </div>
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#toggles2" />
             </svg>
@@ -190,7 +191,7 @@
           </div>
 
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -206,7 +207,7 @@
           </div>
 
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -225,7 +226,7 @@
 
           <!-- DB -->
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -240,7 +241,7 @@
             </div>
           </div>
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -255,7 +256,7 @@
           </div>
 
           
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -269,7 +270,7 @@
             </div>
           </div>
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -284,7 +285,7 @@
           </div>
 
 
-          <div class="col d-flex align-items-start">
+          <div class="hover-container col d-flex align-items-start">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
               <use xlink:href="#geo-fill" />
             </svg>
@@ -345,7 +346,7 @@
               </svg>
             </div>
 
-            <h2>Car Rental Web App</h2>
+            <h2>Car Rental Web</h2>
             <p>A Car Rental Web App that was made using Django and its default ORM. Users need to validate their driver
               license before renting.</p>
             <a href="#" class="icon-link">
@@ -383,35 +384,51 @@
 
     <!-- FORM -->
 
-    <div class="container">
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <!-- onkeyup = "email_validate(this)" required /" -->
-        <input type="email" class="form-control" id="email-text">
-        <div class="status" id="status"></div>
+    <section id="contact">
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 ">Contact Me</h2>
+
+          <div class="container">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <!-- onkeyup = "email_validate(this)" required /" -->
+              <input type="email" class="form-control" id="email-text">
+              <div class="status" id="status"></div>
+            </div>
+
+
+            <!-- <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name-text">
+              <div class="status" id="status"></div>
+            </div> -->
+
+
+            
+
+
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+              <textarea class="form-control" id="txt" rows="3"></textarea>
+            </div>
+
+
+            <div class="mb-3">
+              <button class="btn btn-dark" type="submit">Submit</button>
+            </div>
+
+          </div>
+
       </div>
-
-
-
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-        <textarea class="form-control" id="txt" rows="3"></textarea>
-      </div>
-
-
-      <div class="mb-3">
-        <button class="btn btn-dark" type="submit">Submit</button>
-      </div>
-
-    </div>
-
+     </section>
     <!-- END FORM -->
 
   </main>
 
 
 
-  <footer class="container py-5 ">
+  <!-- <footer class="container py-5 ">
     <div class="row">
       <div class="col-12 col-md">
         <small class="d-block mb-3 text-muted">&copy; {{current_year}}</small>
@@ -419,13 +436,13 @@
 
 
       <div class="col-6 col-md">
-        <img src="{% static 'home/images/user.png' %}" alt="X">
         <h5>Accounts</h5>
         <ul class="list-unstyled text-small">
           <li><a class="link-secondary" href="https://www.linkedin.com/in/nikhorem/" target="_blank">LinkedIn</a></li>
           <li><a class="link-secondary" href="#">Stack OverFlow</a></li>
           <li><a class="link-secondary" href="https://github.com/neekho" target="_blank">Github</a></li>
           <li><a class="link-secondary" href="#">LeetCode</a></li>
+          <li><a class="link-secondary" href="https://www.hackerrank.com/profile/nikho_remulla" target="_blank" >HackerRank</a></li>
 
         </ul>
       </div>
@@ -439,9 +456,87 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
-  <!-- <script src="validate.js"></script> -->
+
+
+  <footer class="footer-bg text-center text-lg-start mt-xl-5 pt-4">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4">Accounts</h5>
+
+        <ul class="list-unstyled mb-4">
+          <li>
+            <a href="#!" class="text-white">About us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Collections</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Environmental philosophy</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Artist collaborations</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4">Assistance</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Contact us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Size Guide</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Shipping Information</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Returns & Exchanges</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Payment</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4">Careers</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Jobs</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <!-- <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-uppercase mb-4">Sign up to our newsletter</h5>
+
+        <div class="form-outline form-white mb-4">
+          <input type="email" id="form5Example2" class="form-control" />
+          <label class="form-label" for="form5Example2">Email address</label>
+        </div>
+
+        <button type="submit" class="btn btn-outline-white btn-block">Subscribe</button>
+      </div> -->
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
