@@ -180,7 +180,6 @@ textarea {
 
 }
 
-
 .hover-container {
   transition: transform 0.3s ease-in-out;
 }
@@ -197,6 +196,15 @@ textarea {
   transform: scale(1.1); /* Adjust the scale factor as needed */
 }
 
+/* FOOTER */
+/* 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;  Set your preferred text color 
+  padding: 10px; 
+}*/
 
 
 .footer-bg {
@@ -281,6 +289,9 @@ textarea {
   font-size: 15px;
   font-weight: lighter;
 }
+
+
+
 
 
 /* career */
