@@ -40,6 +40,43 @@
     text-decoration: none;
   }
   
+
+
+  .landing-banner {
+    background: url('https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg'); /* Add your banner image URL */
+    
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+
+  }
+
+  .btn-contact {
+    margin-right: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /*
    * Dummy devices (replace them with your own or something else entirely!)
    */
