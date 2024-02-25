@@ -4,7 +4,9 @@ from django.shortcuts import render
 from datetime import datetime
 
 import requests
-import json
+
+from . forms import CityForm
+
 # Create your views here.
 
 
@@ -23,24 +25,48 @@ def contact(request):
     return HttpResponse('contact page')
 
 
-def runner(request):
+
+def get_weather(request, city_name):
     
     payload = {
         'key': 'c2fcd24120be45aabc3143744232608',
-        'q': 'Makati',
+        'q': city_name,
     }
-
+    
     response = requests.get('http://api.weatherapi.com/v1/current.json', params=payload)
 
     print(response.url)
     print(response.status_code)
+    
+    
+    return response.json()
+    
 
 
-    data = response.json()
+def runner(request):
+    
+    api_response = {}
+    
+    if request.method == 'POST':
+        city_input = CityForm(request.POST)
+        
+        if city_input.is_valid():
+            city_query = city_input.cleaned_data['city_input'].lower().split()
+            print(city_query)
+            
+            api_response = get_weather(request, city_query)
+
+            
+    
+    else:
+        city_input = CityForm()
+    
+ 
+
 
     context = {
-        'response': data
-        
+        'city_input': city_input,
+        'response': api_response
     }
  
 

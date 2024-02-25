@@ -11,23 +11,28 @@
 
         {% csrf_token %}
 
-
-
-        
-        {{ form.as_p }}
+        {{ city_input.as_p }}
         <input type="submit" value="Submit"/>
 
 
     </form>
 
 
-    <h1>{{response.location.name}}, {{response.location.country}} </h1>
 
-    <p>is experiencing {{response.current.temp_c}} celsius of weather</p>
-    <p>a weather condition of {{response.current.condition.text}}</p>
-    <img src="{{response.current.condition. icon}}" alt="weather condition icon">
+    {% if response %}
+
+        <h1>{{response.location.name}}, {{response.location.country}} </h1>
+
+        <p>is experiencing {{response.current.temp_c}} celsius of weather</p>
+        <p>a weather condition of {{response.current.condition.text}}</p>
+        <img src="{{response.current.condition.icon}}" alt="weather condition icon">
 
 
+
+    {% else %}
+        <h1>Please make a search, input a city name</h1>
+
+    {% endif %}
     
 </body>
 </html>
